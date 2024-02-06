@@ -1,0 +1,24 @@
+@import './base.css';
+@import url(https://fonts.googleapis.com/css?family=Marcellus);
+@import url('https://fonts.googleapis.com/css?family=Stalemate');
+
+#app {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-weight: normal;
+  font-family: 'marcellus';
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    color: black;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
