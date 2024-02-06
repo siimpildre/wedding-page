@@ -1,10 +1,4 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
 </script>
 
 <template>
@@ -23,12 +17,13 @@ h1 {
   font-weight: 500;
   font-size: 4rem;
   position: relative;
-  top: -10px;
+  top: 10px;
 }
 
 h3 {
   font-size: 1.2rem;
   position: relative;
+  top: -10px;
 }
 
 .stalemate {
@@ -43,11 +38,11 @@ h3 {
 @media (min-width: 1024px) {
   h1 {
   font-weight: 500;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   position: relative;
 }
   .greetings h1,
