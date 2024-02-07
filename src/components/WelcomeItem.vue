@@ -1,8 +1,5 @@
 <template>
   <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
     <div class="details">
       <h3>
         <slot name="heading"></slot>
@@ -15,13 +12,15 @@
 <style scoped>
 .item {
   margin-top: 2rem;
-  display: flex;
+  margin-bottom: 2rem;
   position: relative;
 }
 
 .details {
-  flex: 1;
   margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: center;
+  text-align: center;
 }
 
 i {
@@ -44,7 +43,7 @@ h3 {
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    padding: 1rem
   }
 
   i {

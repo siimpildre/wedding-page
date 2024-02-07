@@ -1,6 +1,8 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import TheTimeline from './components/TheTimeline.vue'
+import TheRsvp from './components/TheRsvp.vue'
+import TheExtra from './components/TheExtra.vue'
 </script>
 
 <template>
@@ -12,15 +14,15 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <div class="card first">
-      <TheWelcome />
+      <TheTimeline />
     </div>
 
     <div class="card sec">
-      <TheWelcome />
+      <TheRsvp />
     </div>
 
     <div class="card third">
-      <TheWelcome />
+      <TheExtra />
     </div>
     
   </main>
@@ -34,13 +36,10 @@ header {
   aspect-ratio: 16/10;
 }
 
-main {
-
-}
-
 .card {
-  display: flex;
+  display: grid;
   padding: 2rem;
+  justify-content: center;
 }
 .first{
   background-color: rgba(244, 240, 236, 1);
@@ -87,6 +86,8 @@ main {
     flex-wrap: wrap;
   }
   .card {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 300px;
   }

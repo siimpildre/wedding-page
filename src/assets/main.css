@@ -11,8 +11,12 @@
 
 
 @media (hover: hover) {
-  a:hover {
+  a {
     color: black;
+  }
+
+  a:hover {
+    color: rgb(37, 37, 37);
   }
 }
 
