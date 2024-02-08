@@ -4,6 +4,8 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheTimeline from './components/TheTimeline.vue'
 import TheRsvp from './components/TheRsvp.vue'
 import TheExtra from './components/TheExtra.vue'
+import ByeQuest from './components/ByeQuest.vue'
+
 </script>
 
 <template>
@@ -21,8 +23,8 @@ import TheExtra from './components/TheExtra.vue'
       <div class="card abs">
         <TheTimeline />
       </div>
-      <div class="hands-pic">
-        <img src="./assets/pictures/Tezza-8603.jpg" alt="holding hands pic">
+      <div class="pic">
+        <img src="./assets/pictures/Tezza-8603.jpg" alt="holding hands pic" class="pic-hands">
       </div>
     </div>
 
@@ -37,6 +39,12 @@ import TheExtra from './components/TheExtra.vue'
     </div>
 
   </main>
+
+  <footer>
+    <div>
+      <ByeQuest />
+    </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -89,20 +97,34 @@ import TheExtra from './components/TheExtra.vue'
 img  {
   width: 100%;
 }
-.hands-pic {
+.pic {
   display: flex;
   justify-content: center;
   background-color: rgba(254, 254, 250, 1);
 }
 
+.pic2 {
+  display: flex;
+  justify-content: end;
+  background-color: rgba(245, 241, 237, 1);
+}
+
 @media (min-width: 1024px) {
   
-  img {
+  .pic-hands {
     width: 40%;
     border-top-right-radius: 50rem;
     border-top-left-radius: 50rem;
     position: relative;
     z-index: 2;
+  }
+
+  .pic-house {
+    width: 40%;
+    border-bottom-left-radius: 50rem;
+    border-top-left-radius: 50rem;
+    position: relative;
+    z-index: 2; 
   }
 
   .background-pic::before {
@@ -131,8 +153,11 @@ img  {
   }
 
   .abs {
-
     width: 100%;
+  }
+
+  .no-padding {
+    padding-right: 0;
   }
 
 }

@@ -41,6 +41,7 @@ h3 {
   font-weight: 500;
   margin-bottom: 0.4rem;
   color: var(--color-heading);
+  justify-content: center;
 }
 
 @media (min-width: 1024px) {
