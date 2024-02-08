@@ -9,7 +9,7 @@ import WelcomeItem from './WelcomeItem.vue'
         Vana-Nigula, Praakli, 
         <br> 
         Saaremaa
-        </WelcomeItem>
+    </WelcomeItem>
     <WelcomeItem>
         <template #heading>PULMAPIDU</template>
         <a href="https://sorwespa.com/sorwekook/">Sörweköök</a>, Läätsa küla, 

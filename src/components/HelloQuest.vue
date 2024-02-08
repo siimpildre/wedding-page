@@ -38,12 +38,12 @@ h3 {
 @media (min-width: 1024px) {
   h1 {
   font-weight: 500;
-  font-size: 7rem;
+  font-size: 5rem;
   top: 1rem
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
   top: -2rem;
 }
@@ -51,7 +51,6 @@ h3 {
   
   .greetings h3 {
     text-align: center;
-   
   }
 }
 </style>

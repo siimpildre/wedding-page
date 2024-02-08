@@ -8,15 +8,15 @@ import TheExtra from './components/TheExtra.vue'
 
 <template>
   <header class="wrapper">
-    <div>
+    <div class="nav-color">
       <HelloQuest />  
+    </div>
+    <div class="wrapper background-pic">
+      <HelloWorld />
     </div>
   </header>
 
   <main>
-    <div class="wrapper backgroundPic">
-      <HelloWorld />
-    </div>
     <div class="card">
       <TheTimeline />
     </div>
@@ -34,8 +34,9 @@ import TheExtra from './components/TheExtra.vue'
 
 <style scoped>
 
-header {
-  background-color: rgba(244, 240, 236, 1);
+.nav-color {
+  width: 100%;
+  background-color: rgba(227, 218, 201, 1)
 }
 
 .card {
@@ -56,7 +57,7 @@ header {
   background-color: rgba(227, 218, 201, 1);
 }
 
-.backgroundPic {
+.background-pic {
   display: flex;
   width: 100%;
   height: 100%;
@@ -67,7 +68,7 @@ header {
   background-repeat: no-repeat;
 
 }
-.backgroundPic::before {
+.background-pic::before {
   background-image: url("src/assets/Tezza-8603.jpg");
 	background-size: cover;
 	position: absolute;
@@ -81,17 +82,11 @@ header {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    display: grid;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
     aspect-ratio: 15/9;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
   .card {
     display: flex;
     justify-content: space-evenly;
