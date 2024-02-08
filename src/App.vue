@@ -1,4 +1,5 @@
 <script setup>
+import HelloQuest from './components/HelloQuest.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import TheTimeline from './components/TheTimeline.vue'
 import TheRsvp from './components/TheRsvp.vue'
@@ -6,22 +7,25 @@ import TheExtra from './components/TheExtra.vue'
 </script>
 
 <template>
-  <header class="wrapper backgroundPic">
+  <header class="wrapper">
     <div>
-      <HelloWorld />
+      <HelloQuest />  
     </div>
   </header>
 
   <main>
-    <div class="card first">
+    <div class="wrapper backgroundPic">
+      <HelloWorld />
+    </div>
+    <div class="card">
       <TheTimeline />
     </div>
 
-    <div class="card sec">
+    <div class="card">
       <TheRsvp />
     </div>
 
-    <div class="card third">
+    <div class="card">
       <TheExtra />
     </div>
     
@@ -29,17 +33,16 @@ import TheExtra from './components/TheExtra.vue'
 </template>
 
 <style scoped>
+
 header {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16/10;
+  background-color: rgba(244, 240, 236, 1);
 }
 
 .card {
   display: grid;
   padding: 2rem;
   justify-content: center;
+  background-color: rgba(254, 254, 250, 1);
 }
 .first{
   background-color: rgba(244, 240, 236, 1);
@@ -54,6 +57,10 @@ header {
 }
 
 .backgroundPic {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/10;
   position: relative;
   justify-content: center;
   align-items: center;
