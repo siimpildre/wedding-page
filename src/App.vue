@@ -34,7 +34,6 @@ import TheExtra from './components/TheExtra.vue'
       <div class="grid">
         <TheExtra />
       </div>
-
     </div>
 
   </main>

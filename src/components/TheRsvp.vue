@@ -8,6 +8,6 @@ import WelcomeItem from './WelcomeItem.vue'
         Ootame väga sinuga koos tähistamist!
         <br>
         <br>
-        Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. juuniks meili või telefoni teel!
+        Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. maiks meili või telefoni teel!
     </WelcomeItem>
 </template>

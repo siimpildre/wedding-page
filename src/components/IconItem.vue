@@ -13,6 +13,7 @@
   </template>
   
   <style scoped>
+
   .items {
     margin-top: 2rem;
     display: flex;
