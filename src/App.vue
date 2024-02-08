@@ -39,7 +39,9 @@ import TheExtra from './components/TheExtra.vue'
 
 .nav-color {
   width: 100%;
-  background-color: rgba(227, 218, 201, 1)
+  background-color: rgba(227, 218, 201, 0.8);
+  z-index: 1;
+  position: relative;
 }
 
 .card {
@@ -47,6 +49,8 @@ import TheExtra from './components/TheExtra.vue'
   padding: 2rem;
   justify-content: center;
   background-color: rgba(254, 254, 250, 1);
+  position: relative;
+  z-index: 1;
 }
 .first{
   background-color: rgba(245, 241, 237, 1);
@@ -61,10 +65,9 @@ import TheExtra from './components/TheExtra.vue'
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-
 }
 .background-pic::before {
-  background-image: url("src/assets/Tezza-8603.jpg");
+  background-image: url("src/assets/pictures/Tezza-9003.JPG");
 	background-size: cover;
 	position: absolute;
 	top: 0px;
@@ -73,9 +76,16 @@ import TheExtra from './components/TheExtra.vue'
 	left: 0px;
 	opacity: 0.6;
 	content: "";
+  top: -3rem;
+  transform: scale(1.5)
 }
 
 @media (min-width: 1024px) {
+
+  .background-pic::before {
+    top: -15rem;
+  }
+
   header {
     display: grid;
     place-items: center;
@@ -87,6 +97,7 @@ import TheExtra from './components/TheExtra.vue'
     justify-content: space-evenly;
     align-items: center;
     min-height: 300px;
+    top: -5rem;
   }
 
   .grid {

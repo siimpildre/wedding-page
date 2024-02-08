@@ -4,7 +4,7 @@
 <template>
   <div>
     <h3>
-      Ootame Teid pulma!
+      OOTAME TEID PULMA!
     </h3>
   </div>
 </template>
@@ -12,10 +12,12 @@
 <style scoped>
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
-  top: -3rem;
-  right: -3rem;
+  /* 
+  top: -5rem;
+  right: -4.5rem;
+  */ 
 }
 
 
@@ -24,8 +26,11 @@ h3 {
 h3 {
   font-size: 3rem;
   position: relative;
-  Top: -8rem;
-  right: -10rem;
+
+  Top: -5rem;
+  /* 
+  right: -14rem;
+  */ 
 }
   .greetings h1,
   
