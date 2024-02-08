@@ -17,8 +17,13 @@ import TheExtra from './components/TheExtra.vue'
   </header>
 
   <main>
-    <div class="card">
-      <TheTimeline />
+    <div>
+      <div class="card abs">
+        <TheTimeline />
+      </div>
+      <div class="hands-pic">
+        <img src="./assets/pictures/Tezza-8603.jpg" alt="holding hands pic">
+      </div>
     </div>
 
     <div class="card first">
@@ -46,7 +51,9 @@ import TheExtra from './components/TheExtra.vue'
 
 .card {
   display: grid;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   justify-content: center;
   background-color: rgba(254, 254, 250, 1);
   position: relative;
@@ -77,10 +84,27 @@ import TheExtra from './components/TheExtra.vue'
 	opacity: 0.6;
 	content: "";
   top: -3rem;
-  transform: scale(1.5)
+  transform: scale(1.5);
+}
+
+img  {
+  width: 100%;
+}
+.hands-pic {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(254, 254, 250, 1);
 }
 
 @media (min-width: 1024px) {
+  
+  img {
+    width: 40%;
+    border-top-right-radius: 50rem;
+    border-top-left-radius: 50rem;
+    position: relative;
+    z-index: 2;
+  }
 
   .background-pic::before {
     top: -15rem;
@@ -97,13 +121,19 @@ import TheExtra from './components/TheExtra.vue'
     justify-content: space-evenly;
     align-items: center;
     min-height: 300px;
-    top: -5rem;
   }
 
   .grid {
     display: grid;
     width: 100%;
     justify-content: center;
+    background-color: rgba(254, 254, 250, 1);
+    z-index: 999;
+  }
+
+  .abs {
+
+    width: 100%;
   }
 
 }

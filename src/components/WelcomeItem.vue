@@ -5,6 +5,9 @@
         <slot name="heading"></slot>
       </h3>
       <slot></slot>
+      <h3>
+        <slot name="heading2"></slot>
+      </h3>
     </div>
   </div>
 </template>
