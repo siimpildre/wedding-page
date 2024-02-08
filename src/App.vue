@@ -21,14 +21,17 @@ import TheExtra from './components/TheExtra.vue'
       <TheTimeline />
     </div>
 
-    <div class="card">
+    <div class="card first">
       <TheRsvp />
     </div>
 
     <div class="card">
-      <TheExtra />
+      <div class="grid">
+        <TheExtra />
+      </div>
+
     </div>
-    
+
   </main>
 </template>
 
@@ -46,15 +49,7 @@ import TheExtra from './components/TheExtra.vue'
   background-color: rgba(254, 254, 250, 1);
 }
 .first{
-  background-color: rgba(244, 240, 236, 1);
-}
-
-.sec {
-  background-color: rgba(254, 254, 250, 1);
-}
-
-.third {
-  background-color: rgba(227, 218, 201, 1);
+  background-color: rgba(245, 241, 237, 1);
 }
 
 .background-pic {
@@ -92,6 +87,12 @@ import TheExtra from './components/TheExtra.vue'
     justify-content: space-evenly;
     align-items: center;
     min-height: 300px;
+  }
+
+  .grid {
+    display: grid;
+    width: 100%;
+    justify-content: center;
   }
 
 }

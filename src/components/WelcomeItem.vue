@@ -41,9 +41,14 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+
+  h3 {
+    font-size: 1.5rem;
+  }
   .item {
     margin-top: 0;
-    padding: 1rem
+    padding: 1rem;
+    font-size: 1.2rem;
   }
 
   i {

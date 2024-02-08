@@ -38,14 +38,14 @@ h3 {
 @media (min-width: 1024px) {
   h1 {
   font-weight: 500;
-  font-size: 5rem;
+  font-size: 4rem;
   top: 1rem
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: relative;
-  top: -2rem;
+  top: -1rem;
 }
   .greetings h1,
   
