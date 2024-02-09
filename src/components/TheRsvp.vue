@@ -1,9 +1,16 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
+import IconItemRsvp from './IconItemRsvp.vue';
+import IconRsvp from './icons/IconRsvp.vue';
 
 </script>
 
 <template>
+    <IconItemRsvp>
+        <template #icon>
+            <IconRsvp />
+        </template>
+    </IconItemRsvp>
     <WelcomeItem>
         Ootame väga sinuga koos tähistamist!
         <br>
