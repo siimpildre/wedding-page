@@ -46,9 +46,7 @@ import TheTransport from './components/TheTransport.vue'
   </main>
 
   <footer>
-    <div>
       <ByeQuest />
-    </div>
   </footer>
 </template>
 
@@ -88,7 +86,7 @@ import TheTransport from './components/TheTransport.vue'
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
-	opacity: 0.6;
+	opacity: 0.5;
 	content: "";
   top: -3rem;
   scale: 1.5;

@@ -28,8 +28,13 @@ h3 {
   position: relative;
 }
 
+.space-bt {
+  display: flex;
+  justify-content: space-between;
+}
+
 .greetings {
-  padding: 2rem;
+  padding: 1rem;
   background-color: rgba(227, 218, 201, 1);
 }
 

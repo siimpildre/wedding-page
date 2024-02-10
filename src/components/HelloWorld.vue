@@ -12,8 +12,9 @@
 <style scoped>
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   position: relative;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   /* 
   top: -5rem;
   right: -4.5rem;
