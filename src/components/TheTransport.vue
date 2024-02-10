@@ -1,7 +1,7 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
 import IconItemRsvp from './IconItemRsvp.vue';
-import IconRsvp from './icons/IconRsvp.vue';
+import IconBus from './icons/IconBus.vue';
 
 </script>
 
@@ -9,19 +9,20 @@ import IconRsvp from './icons/IconRsvp.vue';
     <div class="card-rsvp">
         <IconItemRsvp>
             <template #icon>
-                <IconRsvp />
+                <IconBus />
             </template>
         </IconItemRsvp>
         <WelcomeItem>
-            Ootame väga sinuga koos tähistamist!
+            Pulmalistele broneeritud buss sõidab nii tseremooniale, peokohta kui ka õhtul tagasi. 
             <br>
             <br>
-            Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. maiks meili või telefoni teel!
+            Täpsem info selgub hiljem.  
         </WelcomeItem>
     </div>
 </template>
 
-<style scoped>
+<style scoped> 
+
 .card-rsvp {
   display: grid;
   padding-top: 2rem;
@@ -30,7 +31,6 @@ import IconRsvp from './icons/IconRsvp.vue';
   justify-content: center;
   position: relative;
   z-index: 1;
-
 }
 
   @media (min-width: 1024px) {

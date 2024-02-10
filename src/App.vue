@@ -5,22 +5,25 @@ import TheTimeline from './components/TheTimeline.vue'
 import TheRsvp from './components/TheRsvp.vue'
 import TheExtra from './components/TheExtra.vue'
 import ByeQuest from './components/ByeQuest.vue'
+import TheTransport from './components/TheTransport.vue'
 
 </script>
 
 <template>
-  <header class="wrapper">
+  <header>
     <div class="nav-color">
       <HelloQuest />  
     </div>
-    <div class="wrapper background-pic">
+    <div class="bg-pic-size">
+    <div class="background-pic">
       <HelloWorld />
     </div>
+  </div>
   </header>
 
   <main>
     <div>
-      <div class="card abs">
+      <div>
         <TheTimeline />
       </div>
       <div class="pic">
@@ -28,22 +31,22 @@ import ByeQuest from './components/ByeQuest.vue'
       </div>
     </div>
 
-    <div class="card first">
+    <div class="first">
       <TheRsvp />
     </div>
 
-    <div class="card">
-      <div class="grid">
-        <TheExtra />
-      </div>
+    <div>
+      <TheExtra />
+    </div>
+
+    <div class="first">
+      <TheTransport />
     </div>
 
   </main>
 
   <footer>
-    <div>
       <ByeQuest />
-    </div>
   </footer>
 </template>
 
@@ -56,42 +59,38 @@ import ByeQuest from './components/ByeQuest.vue'
   position: relative;
 }
 
-.card {
-  display: grid;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  justify-content: center;
-  background-color: rgba(254, 254, 250, 1);
-  position: relative;
-  z-index: 1;
-}
 .first{
   background-color: rgba(245, 241, 237, 1);
+}
+
+.bg-pic-size {
+  width: 100%;
 }
 
 .background-pic {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   aspect-ratio: 16/10;
   position: relative;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 .background-pic::before {
   background-image: url("src/assets/pictures/Tezza-9003.JPG");
 	background-size: cover;
 	position: absolute;
-	top: 0px;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
-	opacity: 0.6;
+	opacity: 0.5;
 	content: "";
   top: -3rem;
-  transform: scale(1.5);
+  scale: 1.5;
+  overflow: hidden;
 }
 
 img  {
@@ -101,12 +100,6 @@ img  {
   display: flex;
   justify-content: center;
   background-color: rgba(254, 254, 250, 1);
-}
-
-.pic2 {
-  display: flex;
-  justify-content: end;
-  background-color: rgba(245, 241, 237, 1);
 }
 
 @media (min-width: 1024px) {
@@ -119,14 +112,6 @@ img  {
     z-index: 2;
   }
 
-  .pic-house {
-    width: 40%;
-    border-bottom-left-radius: 50rem;
-    border-top-left-radius: 50rem;
-    position: relative;
-    z-index: 2; 
-  }
-
   .background-pic::before {
     top: -15rem;
   }
@@ -136,29 +121,5 @@ img  {
     place-items: center;
     aspect-ratio: 15/9;
   }
-
-  .card {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 300px;
-  }
-
-  .grid {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    background-color: rgba(254, 254, 250, 1);
-    z-index: 999;
-  }
-
-  .abs {
-    width: 100%;
-  }
-
-  .no-padding {
-    padding-right: 0;
-  }
-
 }
 </style>

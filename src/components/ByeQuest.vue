@@ -21,13 +21,21 @@ h1 {
   font-weight: 500;
   font-size: 2.5rem;
   position: relative;
-  top: 1rem;
 }
 
 h3 {
   font-size: 1rem;
   position: relative;
-  top: -0.5rem;
+}
+
+.space-bt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.greetings {
+  padding: 1rem;
+  background-color: rgba(227, 218, 201, 1);
 }
 
 .greetings h1,
@@ -38,14 +46,16 @@ h3 {
 @media (min-width: 1024px) {
   h1 {
   font-weight: 500;
-  font-size: 4rem;
-  top: 1rem
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
-  top: -1rem;
+}
+
+.greetings {
+  background-color: rgba(227, 218, 201, 1);
 }
   .greetings h1,
   

@@ -1,21 +1,63 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
+import IconItemRsvp from './IconItemRsvp.vue';
+import IconRings from './icons/IconRings.vue';
+import IconGlasses from './icons/IconGlasses.vue'
 
 </script>
 
 <template>
-    <WelcomeItem>
-        <template #heading>TSEREMOONIA</template>
-        Vana-Nigula, Praakli, 
-        <br> 
-        Saaremaa
-        <template #heading2>15:00</template>
-    </WelcomeItem>
-    <WelcomeItem>
-        <template #heading>PULMAPIDU</template>
-        <a href="https://sorwespa.com/sorwekook/">Sörweköök</a>, Läätsa küla, 
-        <br>
-        Saaremaa
-        <template #heading2>17:00</template>
-    </WelcomeItem>
+    <div class="card-timeline">
+        <div>
+            <IconItemRsvp>
+                <template #icon>
+                    <IconRings />
+                </template>
+            </IconItemRsvp>
+            <WelcomeItem>
+                <template #heading>TSEREMOONIA</template>
+                Vana-Nigula, Praakli, 
+                <br> 
+                Saaremaa
+                <template #heading2>15:00</template>
+            </WelcomeItem>
+        </div>
+        <div>
+            <IconItemRsvp>
+                <template #icon>
+                    <IconGlasses />
+                </template>
+            </IconItemRsvp>
+            <WelcomeItem>
+                <template #heading>PULMAPIDU</template>
+                <a href="https://sorwespa.com/sorwekook/">Sörweköök</a>, Läätsa küla, 
+                <br>
+                Saaremaa
+                <template #heading2>17:00</template>
+            </WelcomeItem>
+        </div>
+    </div>
 </template>
+
+<style scoped>
+.card-timeline {
+  display: grid;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
+  background-color: rgba(254, 254, 250, 1);
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+    .card-timeline {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 300px;
+    }
+
+}
+</style>
