@@ -16,7 +16,7 @@ import IconRsvp from './icons/IconRsvp.vue';
             Ootame väga sinuga koos tähistamist!
             <br>
             <br>
-            Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. maiks meili või telefoni teel!
+            Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. maiks <a href="google.com">siit!</a>!
         </WelcomeItem>
     </div>
 </template>
