@@ -1,24 +1,41 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
+import IconItemRsvp from './IconItemRsvp.vue';
+import IconRings from './icons/IconRings.vue';
+import IconGlasses from './icons/IconGlasses.vue'
 
 </script>
 
 <template>
     <div class="card-timeline">
-        <WelcomeItem>
-            <template #heading>TSEREMOONIA</template>
-            Vana-Nigula, Praakli, 
-            <br> 
-            Saaremaa
-            <template #heading2>15:00</template>
-        </WelcomeItem>
-        <WelcomeItem>
-            <template #heading>PULMAPIDU</template>
-            <a href="https://sorwespa.com/sorwekook/">Sörweköök</a>, Läätsa küla, 
-            <br>
-            Saaremaa
-            <template #heading2>17:00</template>
-        </WelcomeItem>
+        <div>
+            <IconItemRsvp>
+                <template #icon>
+                    <IconRings />
+                </template>
+            </IconItemRsvp>
+            <WelcomeItem>
+                <template #heading>TSEREMOONIA</template>
+                Vana-Nigula, Praakli, 
+                <br> 
+                Saaremaa
+                <template #heading2>15:00</template>
+            </WelcomeItem>
+        </div>
+        <div>
+            <IconItemRsvp>
+                <template #icon>
+                    <IconGlasses />
+                </template>
+            </IconItemRsvp>
+            <WelcomeItem>
+                <template #heading>PULMAPIDU</template>
+                <a href="https://sorwespa.com/sorwekook/">Sörweköök</a>, Läätsa küla, 
+                <br>
+                Saaremaa
+                <template #heading2>17:00</template>
+            </WelcomeItem>
+        </div>
     </div>
 </template>
 
