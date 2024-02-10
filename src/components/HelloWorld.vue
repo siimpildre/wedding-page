@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="background-pic">
     <h3>
       OOTAME TEID PULMA!
     </h3>
@@ -20,11 +20,10 @@ h3 {
   */ 
 }
 
-
 @media (min-width: 1024px) {
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: relative;
 
   Top: -5rem;
@@ -32,11 +31,6 @@ h3 {
   right: -14rem;
   */ 
 }
-  .greetings h1,
-  
-  .greetings h3 {
-    text-align: right;
-   
-  }
+
 }
 </style>
