@@ -16,7 +16,8 @@ import IconGlasses from './icons/IconGlasses.vue'
             </IconItemRsvp>
             <WelcomeItem>
                 <template #heading>TSEREMOONIA</template>
-                Vana-Nigula, Praakli, 
+                <a href="https://www.google.com/maps/place/Vana-Nigula,+Praakli,+93860+Saare+maakond/@58.2618381,22.577525,16.63z/data=!4m6!3m5!1s0x46f27278489f2193:0xbad931137cba7818!8m2!3d58.2605525!4d22.5800854!16s%2Fg%2F11c87jbc86?entry=ttu">
+                    Vana-Nigula</a>, Praakli, 
                 <br> 
                 Saaremaa
                 <template #heading2>15:00</template>
@@ -40,6 +41,9 @@ import IconGlasses from './icons/IconGlasses.vue'
 </template>
 
 <style scoped>
+a {
+    color: black;
+}
 .card-timeline {
   display: grid;
   padding-top: 2rem;

@@ -14,9 +14,6 @@ import IconBus from './icons/IconBus.vue';
         </IconItemRsvp>
         <WelcomeItem>
             Pulmalistele broneeritud buss sõidab nii tseremooniale, peokohta kui ka õhtul tagasi. 
-            <br>
-            <br>
-            Täpsem info selgub hiljem.  
         </WelcomeItem>
     </div>
 </template>
