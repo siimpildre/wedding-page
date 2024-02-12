@@ -9,9 +9,7 @@ import IconBaby from './icons/IconBaby.vue'
 </script>
 <template>
     <div class="card-extra">
-        <WelcomeItem>
             <h3>LISAINFO</h3>
-        </WelcomeItem>
         <IconItem>
             <template #icon>
                 <IconRings />
@@ -34,12 +32,20 @@ import IconBaby from './icons/IconBaby.vue'
             <template #icon>
                 <IconBaby />
             </template>
-            Pere pisematele palume selleks õhtuks leida hoidja.
+            Pere pisematele palume selleks päevaks leida hoidja.
         </IconItem>
     </div>
 </template>
 
 <style scoped>
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: var(--color-heading);
+  text-align: center;
+}
 
 .card-extra {
   display: grid;
@@ -49,5 +55,6 @@ import IconBaby from './icons/IconBaby.vue'
   position: relative;
   z-index: 1;
 }
+
 
 </style>
