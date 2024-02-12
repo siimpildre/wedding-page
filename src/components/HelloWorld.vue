@@ -22,9 +22,6 @@ h3 {
   */ 
 }
 
-.hidden {
-  visibility: hidden;
-}
 
 @media (min-width: 1024px) {
 

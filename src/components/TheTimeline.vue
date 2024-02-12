@@ -54,7 +54,6 @@ a {
 h3 {
   font-size: 1.2rem;
   position: relative;
-  visibility: visible;
   padding: 0.5rem;
   text-align: center;
   background-color: rgba(227, 218, 201, 0.8);
@@ -74,7 +73,7 @@ h3 {
 @media (min-width: 1024px) {
 
     h3 {
-        visibility: hidden;
+        display: none;
     }
 
     .card-timeline {
