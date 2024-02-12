@@ -43,6 +43,7 @@ h3 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-top: 2rem;
+  margin-bottom: 0.4rem;
   color: var(--color-heading);
   text-align: center;
 }
