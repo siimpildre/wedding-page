@@ -80,7 +80,7 @@ import TheTransport from './components/TheTransport.vue'
   overflow: hidden;
 }
 .background-pic::before {
-  background-image: url("src/assets/Tezza-9003.JPG");
+  background-image: url("src/assets/Tezza-9003.jpg");
 	background-size: cover;
 	position: absolute;
 	right: 0px;
