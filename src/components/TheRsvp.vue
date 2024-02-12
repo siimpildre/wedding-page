@@ -16,12 +16,17 @@ import IconRsvp from './icons/IconRsvp.vue';
             Ootame väga sinuga koos tähistamist!
             <br>
             <br>
-            Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. maiks <a href="google.com">siit!</a>!
+            Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. maiks <a href="https://forms.gle/Jk8bbrrnJ9wTEER5A">siit</a>!
         </WelcomeItem>
     </div>
 </template>
 
 <style scoped>
+
+a {
+    font-weight: 600;
+    color: black;
+}
 .card-rsvp {
   display: grid;
   padding-top: 2rem;
@@ -30,7 +35,6 @@ import IconRsvp from './icons/IconRsvp.vue';
   justify-content: center;
   position: relative;
   z-index: 1;
-
 }
 
   @media (min-width: 1024px) {
