@@ -27,7 +27,7 @@ import TheTransport from './components/TheTransport.vue'
         <TheTimeline />
       </div>
       <div class="pic">
-        <img src="./assets/pictures/Tezza-8603.jpg" alt="holding hands pic" class="pic-hands">
+        <img src="./assets/Tezza-8603.jpg" alt="holding hands pic" class="pic-hands">
       </div>
     </div>
 
@@ -80,7 +80,7 @@ import TheTransport from './components/TheTransport.vue'
   overflow: hidden;
 }
 .background-pic::before {
-  background-image: url("src/assets/pictures/Tezza-9003.JPG");
+  background-image: url("src/assets/Tezza-9003.JPG");
 	background-size: cover;
 	position: absolute;
 	right: 0px;
