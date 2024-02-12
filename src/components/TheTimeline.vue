@@ -7,6 +7,12 @@ import IconGlasses from './icons/IconGlasses.vue'
 </script>
 
 <template>
+    <div>
+        <h3>
+            OOTAME TEID PULMA!
+        </h3>
+    </div>
+
     <div class="card-timeline">
         <div>
             <IconItemRsvp>
@@ -44,6 +50,16 @@ import IconGlasses from './icons/IconGlasses.vue'
 a {
     color: black;
 }
+
+h3 {
+  font-size: 1.2rem;
+  position: relative;
+  visibility: visible;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgba(227, 218, 201, 0.8);
+}
+
 .card-timeline {
   display: grid;
   padding-top: 2rem;
@@ -56,6 +72,11 @@ a {
 }
 
 @media (min-width: 1024px) {
+
+    h3 {
+        visibility: hidden;
+    }
+
     .card-timeline {
         display: flex;
         justify-content: space-evenly;
