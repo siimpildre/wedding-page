@@ -13,10 +13,9 @@ import IconRsvp from './icons/IconRsvp.vue';
             </template>
         </IconItemRsvp>
         <WelcomeItem>
-            Ootame väga sinuga koos tähistamist!
+            Ootame juba väga sinuga koos tähistamist!
             <br>
             <br>
-            Palun anna oma tulekust või mitte tulekust teada hiljemalt 27. maiks <a href="https://forms.gle/Jk8bbrrnJ9wTEER5A">siit</a>!
         </WelcomeItem>
     </div>
 </template>

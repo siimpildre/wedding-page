@@ -13,7 +13,10 @@ import IconBus from './icons/IconBus.vue';
             </template>
         </IconItemRsvp>
         <WelcomeItem>
-            Pulmalistele broneeritud buss sõidab nii tseremooniale, peokohta kui ka õhtul tagasi. 
+            Bussile kogunemiskoht on Selveri taguses parklas kell 14:30 ning buss alustab liikumist tseremooniale 14:40. 
+            <br>
+            <br>
+            Öösel teeb buss vajadusel mitu ringi Kuressaarde ning ühe tiiru ka Kärlalt läbi, et kõik pidulised saaksid soovi korral koju. 
         </WelcomeItem>
     </div>
 </template>

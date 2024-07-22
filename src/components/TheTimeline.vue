@@ -40,7 +40,7 @@ import IconGlasses from './icons/IconGlasses.vue'
                 <a href="https://sorwespa.com/sorwekook/">Sörweköök</a>, Läätsa küla, 
                 <br>
                 Saaremaa
-                <template #heading2>17:00</template>
+                <template #heading2>16:30</template>
             </WelcomeItem>
         </div>
     </div>

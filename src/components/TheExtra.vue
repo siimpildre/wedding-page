@@ -20,7 +20,7 @@ import IconBaby from './icons/IconBaby.vue'
             <template #icon>
                 <IconDaisy />
             </template>
-            Lilli palume mitte tuua. Nende asemel võib kinkida lotopileti või mõne hea veini.
+            Lilli palume mitte tuua. Nende asemel võib kinkida lotopileti või mõne hea punase veini.
         </IconItem>
         <IconItem> 
             <template #icon>
